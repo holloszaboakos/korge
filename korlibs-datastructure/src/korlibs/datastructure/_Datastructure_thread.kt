@@ -2,9 +2,12 @@
 
 package korlibs.datastructure.thread
 
-import korlibs.datastructure.*
-import korlibs.time.*
-import kotlin.time.*
+import korlibs.datastructure.Extra
+import korlibs.time.DateTime
+import korlibs.time.TimeSpan
+import korlibs.time.milliseconds
+import korlibs.time.seconds
+import kotlin.time.TimeSource
 
 expect class NativeThread(code: (NativeThread) -> Unit) : Extra {
     companion object {

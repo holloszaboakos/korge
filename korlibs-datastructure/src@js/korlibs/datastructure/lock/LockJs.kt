@@ -1,6 +1,6 @@
 package korlibs.datastructure.lock
 
-import korlibs.time.*
+import korlibs.time.TimeSpan
 
 actual class Lock actual constructor() : BaseLock {
     var locked = false

@@ -1,7 +1,8 @@
 package korlibs.datastructure.thread
 
-import korlibs.datastructure.*
-import korlibs.time.*
+import korlibs.datastructure.Extra
+import korlibs.time.TimeSpan
+import korlibs.time.seconds
 
 private fun TimeSpan.toMillisNanos(): Pair<Long, Int> {
     val nanoSeconds = inWholeNanoseconds
