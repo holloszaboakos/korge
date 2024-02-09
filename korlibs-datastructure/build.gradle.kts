@@ -15,6 +15,8 @@ dependencies {
     commonTestApi(libs.kotlinx.coroutines.test)
     commonMainApi(project(":korlibs-time"))
     commonMainApi(project(":korlibs-platform"))
+    commonMainApi(project(":korlibs-math-core"))
+    commonMainApi(project(":korlibs-memory"))
 }
 
 fun doGenerateKdsTemplates() {
