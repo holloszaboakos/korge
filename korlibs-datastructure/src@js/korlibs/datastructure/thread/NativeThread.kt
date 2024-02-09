@@ -1,8 +1,8 @@
 package korlibs.datastructure.thread
 
-import korlibs.datastructure.*
-import korlibs.time.*
-import kotlin.time.*
+import korlibs.datastructure.Extra
+import korlibs.time.TimeSpan
+import kotlin.time.TimeSource
 
 actual class NativeThread actual constructor(val code: (NativeThread) -> Unit) : Extra by Extra.Mixin() {
     actual var isDaemon: Boolean = false

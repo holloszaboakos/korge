@@ -3,10 +3,10 @@ package korlibs.datastructure.thread
 
 import korlibs.datastructure.*
 import korlibs.time.*
-import kotlinx.cinterop.*
-import platform.Foundation.*
 import kotlin.native.concurrent.*
 import kotlin.native.runtime.*
+import kotlinx.cinterop.*
+import platform.Foundation.*
 
 actual class NativeThread actual constructor(val code: (NativeThread) -> Unit) : Extra by Extra.Mixin() {
     actual var isDaemon: Boolean = false

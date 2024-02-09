@@ -2,9 +2,12 @@
 
 package korlibs.datastructure.lock
 
-import korlibs.datastructure.thread.*
-import korlibs.time.*
-import kotlin.time.*
+import korlibs.datastructure.thread.NativeThread
+import korlibs.datastructure.thread.sleepExact
+import korlibs.time.TimeSpan
+import korlibs.time.milliseconds
+import korlibs.time.seconds
+import kotlin.time.TimeSource
 
 interface BaseLock {
     fun notify(unit: Unit = Unit)

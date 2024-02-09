@@ -1,8 +1,9 @@
 package korlibs.datastructure.lock
 
-import korlibs.time.*
-import java.util.concurrent.atomic.*
-import kotlin.time.*
+import java.util.concurrent.atomic.AtomicBoolean
+import korlibs.time.TimeSpan
+import kotlin.time.TimeSource
+import kotlin.time.measureTime
 
 private fun TimeSpan.toMillisNanos(): Pair<Long, Int> {
     val nanoSeconds = inWholeNanoseconds
